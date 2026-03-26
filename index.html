@@ -1,85 +1,120 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Servicios</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <style>
-    body {
-      font-family: Arial;
-      margin: 0;
-      background: #f5f5f5;
-      text-align: center;
-    }
+<title>Servicios</title>
 
-    header {
-      background: #0a66c2;
-      color: white;
-      padding: 20px;
-    }
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f5f5f5;
+  text-align: center;
+}
 
-    .btn-whatsapp {
-      display: inline-block;
-      margin: 15px;
-      padding: 10px 20px;
-      background: #25D366;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
+header {
+  background: #0a66c2;
+  color: white;
+  padding: 20px;
+}
 
-    .card {
-      background: white;
-      margin: 15px;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
+/* CONTENEDOR DE SERVICIOS */
+.servicios {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 20px;
+}
 
-    img {
-      width: 100%;
-      border-radius: 10px;
-    }
-  </style>
+/* TARJETAS */
+.card {
+  background: white;
+  width: 250px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* BOTÓN WHATSAPP */
+.btn-whatsapp {
+  display: inline-block;
+  margin: 15px;
+  padding: 10px 20px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .servicios {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>SERVICIOS PROFESIONALES</h1>
-  <p>INGENIERO EN ELECTRONICA Y TELECOMUNICACIONES</p>
+<h1 style="font-size:18px;">
+SERVICIOS PROFESIONALES EN ELECTRONICA Y TELECOMUNICACIONES
+</h1>
+<p>Ing. Carlos Alfredo Ochoa Saez</p>
+<p>Soluciones especializadas</p>
 </header>
 
-<a class="btn-whatsapp" 
-href="https://wa.me/593980318281" target="_blank">
-Atención por WhatsApp
+<a class="btn-whatsapp" href="https://wa.me/593980318281" target="_blank">
+Contactar por WhatsApp
 </a>
 
-<div class="card">
-  <img src="servicio1.jpg">
-  <h3>Reparación de Equipos Electrónicos</h3>
-  <p>Tarjetas PCB, circuitos, sensores, conectores, baterías, hardware en general</p>
+<!-- SERVICIOS -->
+<div class="servicios">
+
+  <div class="card">
+    <img src="img/servicio1.jpg">
+    <h3>Reparación de equipos electrónicos</h3>
+    <p>Diagnóstico y reparación profesional</p>
+  </div>
+
+  <div class="card">
+    <img src="img/servicio2.jpg">
+    <h3>Instalación de redes</h3>
+    <p>Configuración de routers y cableado</p>
+  </div>
+
+  <div class="card">
+    <img src="img/servicio3.jpg">
+    <h3>Sistemas de telecomunicaciones</h3>
+    <p>Diseño-Implementación y mantenimiento</p>
+  </div>
+
+  <div class="card">
+    <img src="img/servicio4.jpg">
+    <h3>Soporte técnico</h3>
+    <p>Asistencia y solución de fallas</p>
+  </div>
+
 </div>
 
+<!-- INFORMACIÓN -->
 <div class="card">
-  <img src="servicio2.jpg">
-  <h3>Seguridad y Control Electrónico</h3>
-  <p>Instalaciones eléctricas y electrónicas, Sistema de Videovigilancia, Sensores y controladores de accesos y más </p>
-</div>
-  
-<div class="card">
-  <img src="servicio3.jpg">
-  <h3>Equipos de conteo y clasificación de Dinero</h3>
-  <p>Venta de Recontadoras de billetes y monedas, sistemas de cajas fuertes inteligentes, Mantenimiento preventivo y correctivo </p>
-</div>
-  
-<div class="card">
-  <h3>Información</h3>
+  <h3>Información del Profesional</h3>
   <p>📍 Loja, Ecuador</p>
   <p>📞 0980318281</p>
-  <p> 📧 carlosochoasaez23@gmail.com</p>
-  
+  <p>📧 carlosochoasaez23@email.com</p>
 </div>
 
 </body>
+</html>
